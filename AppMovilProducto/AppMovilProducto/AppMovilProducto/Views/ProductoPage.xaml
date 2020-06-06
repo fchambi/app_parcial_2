@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppMovilProducto.Views.ProductoPage">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10,30,10,10" Spacing="10"
+                     BindingContext="{Binding Main, Source={StaticResource Locator}}"
+              >
+            <Label x:Name="titleLabel"
+           Font="30"
+           Text="Programa de Producto"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"/>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="newButton"
+              Text="Agregar"
+              BackgroundColor="Navy"
+              TextColor="White"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"
+              WidthRequest="35"/>
+                <Button x:Name="find"
+              Text="Consultar"
+              BackgroundColor="Navy"
+              TextColor="White"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"
+              WidthRequest="35"/>
+                <Button x:Name="update"
+              Text="Actualizar"
+              BackgroundColor="Navy"
+              TextColor="White"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"
+              WidthRequest="35"/>
+                <Button x:Name="delete"           
+              Text="Borrar"
+              BackgroundColor="Navy"
+              TextColor="White"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"
+              WidthRequest="35"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
