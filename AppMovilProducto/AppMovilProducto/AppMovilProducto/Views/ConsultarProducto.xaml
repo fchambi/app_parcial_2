@@ -11,6 +11,14 @@
             <Button Text="Search" x:Name="BtnSearch" ></Button>
             <Button Text="Listar" x:Name="BtnSearchTodos" ></Button>
             <ListView x:Name="ProductsListView">
+                <ListView.Header>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Producto ID" TextColor="Red"></Label>
+                        <Label Text="Nombre" TextColor="Red"></Label>
+                        <Label Text="Precio" TextColor="Red"></Label>
+                        <Label Text="Cantidad" TextColor="Red"></Label>
+                    </StackLayout>
+                </ListView.Header>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

@@ -8,12 +8,12 @@ namespace AppMovilProducto
 {
     public partial class App : Application
     {
-        public static NavigationPage Navigator { get; set; }
+        public static NavigationPage Navigator { get; set; } //Para navegar entre paginas de la app
 
         public App()
         {
             InitializeComponent();
-           MainPage = new NavigationPage(new ProductoPage());
+           MainPage = new NavigationPage(new ProductoPage()); // se instancia en ProductPAge que es el menu principal
         }
 
         protected override void OnStart()

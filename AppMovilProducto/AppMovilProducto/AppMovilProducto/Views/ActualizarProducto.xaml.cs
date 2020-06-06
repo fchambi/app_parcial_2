@@ -23,6 +23,7 @@ namespace AppMovilProducto.Views
             BtnUpdate2.Clicked += BtnUpdate2_Clicked;
         }
 
+        //Disminuir producto del inventario
         private async void BtnUpdate2_Clicked(object sender, EventArgs e)
         {
             Product products = new Product()
@@ -40,6 +41,7 @@ namespace AppMovilProducto.Views
             }
         }
 
+        //Aumentar la cantidad al inventario
         private async void BtnUpdate_Clicked(object sender, EventArgs e)
         {
             Product products = new Product()
